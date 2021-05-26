@@ -8,20 +8,19 @@ How to utilize python to pull information into JSON/SQL databases
 Protype, mockup, and framework for project
 Create a flowchart for how the application will work (pull info -> storing info -> comparing prices -> etc.)
 Create a flowchart for how users will interact with our program
-Create prototypes for code 
- 
+Create prototypes for code
+
 Create database of items we want to check/ items with price in each store(json, sql, excel)(store - include item name, price, SKU number, date and time, link)
 How to add items to a chart/database through code
 Pull items to database
-Price comparison between databases 
+Price comparison between databases
+
+ Edit test 5/26/2021 ATOM
  
- 
- 
- 
+
 
 
 List of items we want to check such as pens by sku or name or brand
 
 
-Idea Craft: 
-
+Idea Craft:
