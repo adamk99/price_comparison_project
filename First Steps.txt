@@ -22,7 +22,3 @@ List of items we want to check such as pens by sku or name or brand
 
 
 Idea Craft:
-
-
-VCS test #1 - 5/27/2021
-VCS test #2 - 5/27/2021
