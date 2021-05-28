@@ -15,6 +15,25 @@ How to add items to a chart/database through code
 Pull items to database
 Price comparison between databases
 
+-----------------------------------------------------------------------
+
+1. learn how to create databases (learn SQL)
+    - create one together, create a standard for format
+    - create others
+2. create comparison operator between databases (python to compare json files?)
+    - test with hand populated random databases
+3. create tool to auto populate databases with data based off of SKU number, price, w/e (splice strings from websites/ webscraping to find prices and item details)
+
+for ex:
+#1 database for items we would like to look at and compare prices for
+#2, #3 databases for stores (target, walmart, amazon, ebay, w/e)
+
+use #1 as a list of items we want to specifically look at
+use #2, #3 to list item details
+
+
+
+
  Edit test 5/26/2021 ATOM
 
 
