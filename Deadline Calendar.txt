@@ -1,0 +1,3 @@
+Deadlines
+
+by Wednesday, 6/2/2021 we will learn about sql and create the framework for the databases.
