@@ -16,11 +16,12 @@ Pull items to database
 Price comparison between databases
 
  Edit test 5/26/2021 ATOM
- 
-VCS test #1 - 5/27/2021
 
 
 List of items we want to check such as pens by sku or name or brand
 
 
 Idea Craft:
+
+
+VCS test #1 - 5/27/2021
