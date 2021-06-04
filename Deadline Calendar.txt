@@ -1,5 +1,10 @@
 Deadlines
 
-by Wednesday, 6/2/2021 we will learn about sql and create the framework for the databases.
+Wednesday, 6/2/2021 we will learn about sql and create the framework for the databases.
 
 Friday, 6/4/2021 look for items/categories to resell and 7 stores/distributors to use
+
+Wednesday, 6/9/2021
+Karlen - make DB, where to host DB, how to get info into DB, find DB with books we want to look at, 
+Adam - look at amazon tools and look at pricing and tools on what would work/ what is free, how to connect python with databases
+        how to look at info, SQL views or python generated table/list??
