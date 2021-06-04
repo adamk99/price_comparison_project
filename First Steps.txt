@@ -40,4 +40,5 @@ use #2, #3 to list item details
 List of items we want to check such as pens by sku or name or brand
 
 
-Idea Craft:
+-------------------------------------------------------------------------
+
