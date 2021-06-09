@@ -1,0 +1,3 @@
+
+API
+Amazon product advertising-API (PA-API) 5.0
