@@ -1,3 +1,16 @@
+
+*7/9/2021 - 1:46 PM*
+Step 0.5:
+How to use API?
+- How to get access? Who has APIs?
+Which companies have APIs we can use?(target, chegg, walmart, amazon, thriftbooks, ebay???)
+How to come up with URLs for webscraping for each website? (book/info/isbn > URL > webscrape)
+How to input and write over files? (editing the excel sheet)
+
+Step 2:
+How to combine our python section of the project with SQL and a database? (replace excel part with an actual database)
+
+-----------------------------------------------------------------------
 Task List
 Create github repository
 Research and experiment:
@@ -14,7 +27,6 @@ Create database of items we want to check/ items with price in each store(json, 
 How to add items to a chart/database through code
 Pull items to database
 Price comparison between databases
-
 -----------------------------------------------------------------------
 
 1. learn how to create databases (learn SQL)
