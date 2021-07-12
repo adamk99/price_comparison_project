@@ -1,3 +1,21 @@
+1. how to consolidate excel sheets?  combine multiple sheets - order the data, remove duplicates
+    -https://realpython.com/openpyxl-excel-spreadsheets-python/
+2. use link in excel sheets to navigate to goodreads
+3. then link from goodreads to book market page
+4 webscrape data and add to main consolidated excel sheet
+
+
+*7/9/2021 - 1:46 PM*
+How to use API?
+- How to get access? Who has APIs?
+Which companies have APIs we can use?(target, chegg, walmart, amazon, thriftbooks, ebay???)
+How to come up with URLs for webscraping for each website? (book/info/isbn > URL > webscrape)
+How to input and write over files? (editing the excel sheet)
+
+~later~
+How to combine our python section of the project with SQL and a database? (replace excel part with an actual database)
+
+-----------------------------------------------------------------------
 Task List
 Create github repository
 Research and experiment:
@@ -14,7 +32,6 @@ Create database of items we want to check/ items with price in each store(json, 
 How to add items to a chart/database through code
 Pull items to database
 Price comparison between databases
-
 -----------------------------------------------------------------------
 
 1. learn how to create databases (learn SQL)
@@ -40,4 +57,5 @@ use #2, #3 to list item details
 List of items we want to check such as pens by sku or name or brand
 
 
-Idea Craft:
+-------------------------------------------------------------------------
+
