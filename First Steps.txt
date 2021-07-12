@@ -1,3 +1,4 @@
+GOAL: Complete step 1 before wednesday 7/14/2021
 1. how to consolidate excel sheets?  combine multiple sheets - order the data, remove duplicates
     -https://realpython.com/openpyxl-excel-spreadsheets-python/
 2. use link in excel sheets to navigate to goodreads
