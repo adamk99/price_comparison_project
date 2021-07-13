@@ -7,16 +7,15 @@ files = os.listdir(cwd)  # Get all the files in that directory
 print("Files in %r: %s" % (cwd, files))
 print("\n \n")
   
-directory = os.path.join(cwd,"Sci-Fi Books")
-for root,dirs,files in os.walk(directory):
-    for file in files:
-       if file.endswith(".csv"):
-           f=open(file, 'r')
-           #  perform calculation
-           f.close()
+# needs to be integrated-------------
+# directory = os.path.join(cwd,"Sci-Fi Books")
+# for root,dirs,files in os.walk(directory):
+#     for file in files:
+#        if file.endswith(".csv"):
+#            f=open(file, 'r')
+#            #  perform calculation
+#            f.close()
 
-
-  
 # csv file name
 filename = "sf_aliens.csv"
   
