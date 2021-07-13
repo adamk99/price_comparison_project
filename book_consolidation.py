@@ -5,6 +5,7 @@ import os
 cwd = os.getcwd()  # Get the current working directory (cwd)
 files = os.listdir(cwd)  # Get all the files in that directory
 print("Files in %r: %s" % (cwd, files))
+print("\n \n")
   
   
 # csv file name
@@ -15,7 +16,7 @@ fields = []
 rows = []
   
 # reading csv file
-with open(filename, 'r') as csvfile:
+with open(filename, mode= 'r', encoding= 'utf-8') as csvfile:
     # creating a csv reader object
     csvreader = csv.reader(csvfile)
       
