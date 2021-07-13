@@ -17,11 +17,11 @@ print(directory)
 
 for root,dirs,files in os.walk(directory):
     for file in files:
-        print(file)
         if file.endswith('.csv'):
-            print(file)
+            print('File name: ', file)
             filepath=os.path.join(directory, file)
-            f= open(filepath, mode= 'r', encoding= 'utf-8') 
+            print('File path: ', filepath, '\n')
+            f = open(filepath, mode= 'r', encoding= 'utf-8') 
             # initializing the titles and rows list
             fields = []
             rows = []
@@ -29,21 +29,21 @@ for root,dirs,files in os.walk(directory):
             #reading csv file
             #with open(filename, mode= 'r', encoding= 'utf-8') as csvfile:
 
-            # creating a csv reader object
+            #creating a csv reader object
             csvreader = csv.reader(f)
       
             #extracting field names through first row
-            fields = next(f)
+            fields = next(csvreader)
   
             #extracting each data row one by one
-            for row in f:
+            for row in csvreader:
                 rows.append(row)
   
             #get total number of rows
             print("Total no. of rows: %d"%(csvreader.line_num))
   
             #printing the field names
-            print('Field names are:' + ', '.join(field for field in fields))
+            print('Field names are: ' + ', '.join(field for field in fields))
   
             #printing first 5 rows
             print('\nFirst 5 rows are:\n')
@@ -52,4 +52,5 @@ for root,dirs,files in os.walk(directory):
                 for col in row:
                     print("%10s"%col),
                 print('\n')
+            print('-------------------- CSV FILE END --------------------\n\n')
             f.close()
