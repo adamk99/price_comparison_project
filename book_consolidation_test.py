@@ -11,41 +11,34 @@ directory = os.path.join(cwd,"Sci-Fi Books")
 for root,dirs,files in os.walk(directory):
     for file in files:
        if file.endswith(".csv"):
-           f=open(file, 'r')
-           #  perform calculation
-           f.close()
-
-
+           f=open(file, mode= 'r', encoding= 'utf-8')  
+           # initializing the titles and rows list
+           fields = []
+           rows = []
   
-# csv file name
-filename = "sf_aliens.csv"
-  
-# initializing the titles and rows list
-fields = []
-rows = []
-  
-# reading csv file
-with open(filename, mode= 'r', encoding= 'utf-8') as csvfile:
-    # creating a csv reader object
-    csvreader = csv.reader(csvfile)
+           # reading csv file
+           with open(filename, mode= 'r', encoding= 'utf-8') as csvfile:
+                # creating a csv reader object
+                csvreader = csv.reader(f)
       
-    # extracting field names through first row
-    fields = next(csvreader)
+                # extracting field names through first row
+                fields = next(f)
   
-    # extracting each data row one by one
-    for row in csvreader:
-        rows.append(row)
+                # extracting each data row one by one
+                for row in f:
+                    rows.append(row)
   
-    # get total number of rows
-    print("Total no. of rows: %d"%(csvreader.line_num))
+                # get total number of rows
+                print("Total no. of rows: %d"%(csvreader.line_num))
   
-# printing the field names
-print('Field names are:' + ', '.join(field for field in fields))
+           # printing the field names
+           print('Field names are:' + ', '.join(field for field in fields))
   
-#  printing first 5 rows
-print('\nFirst 5 rows are:\n')
-for row in rows[:5]:
-    # parsing each column of a row
-    for col in row:
-        print("%10s"%col),
-    print('\n')
+           #  printing first 5 rows
+           print('\nFirst 5 rows are:\n')
+           for row in rows[:5]:
+                # parsing each column of a row
+                for col in row:
+                    print("%10s"%col),
+                print('\n')
+           f.close()
