@@ -1,11 +1,9 @@
+# importing csv module
 import csv
 import os
 
-"""
-This first block gets current working directory into cwd. Then uses the cwd to join and make a new
-path using os.path.join for the "Sci-Fi Books" folder.  It then prints the current directory and
-lists all the files in the directory.
-"""
+
+
 
 cwd = os.getcwd()  # Get the current working directory (cwd)
 print("\n \n", cwd)
@@ -28,6 +26,9 @@ for root,dirs,files in os.walk(directory):
             fields = []
             rows = []
   
+            #reading csv file
+            #with open(filename, mode= 'r', encoding= 'utf-8') as csvfile:
+
             #creating a csv reader object
             csvreader = csv.reader(f)
       
