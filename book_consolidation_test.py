@@ -1,6 +1,6 @@
 import csv
 import os
-
+from operator import itemgetter
 """
 This first block gets current working directory into cwd. Then uses the cwd to join and make
 a new path using os.path.join for the "Sci-Fi Books" folder.  It then prints the current
@@ -34,15 +34,10 @@ while os.path.isfile(new_csv_path) == True:
     new_csv_path = os.path.join(cwd, 'csv' + str(x))
     print(new_csv_path)
     
-    
-newfile = open('csv' + str(x), mode = 'x')
+newfile=  open('csv' + str(x), mode = 'x')
 newfile.close()
-
-
 """
-
-"""
-#explain for loop and additional functions
+explain for loop and additional functions
 
 """
 
@@ -52,35 +47,79 @@ for root,dirs,files in os.walk(directory):
             print('File name: ', file)
             filepath=os.path.join(directory, file)
             print('File path: ', filepath, '\n')
-            f = open(filepath, mode= 'r', encoding= 'utf-8') 
-            # initializing the titles and rows list
-            fields = []
-            rows = []
 
-            #creating a csv reader object
-            csvreader = csv.reader(f)
+            append_all= []
+
+            #open file to be read
+            with open(filepath, mode= 'r', encoding= 'utf-8', newline= '') as f:
+                for line in f:
+                        append_all.append(line.split(','))
+
+            # for line in append_all[:5]:
+            #     print(line)
+
+
+            
+            # addlines = [line for line in csv.reader(f)]
+
+            # print(f"This is the number of lines in each excel doc: {len(addlines)}\n")
+            
+            # #open file to be written to
+            # print(new_csv_path)
+            # csvappend = open(new_csv_path, mode= 'w', encoding= 'utf-8', newline= '')
+            
+            # csv.writer(csvappend).writerows(addlines)
+            
+
+
+            
+            # # initializing the titles and rows list
+            # fields = []
+            # rows = []
+
+            # #creating a csv reader object
+            # csvreader = csv.reader(f)
       
-            #extracting field names through first row
-            fields = next(csvreader)
+            # #extracting field names through first row
+            # fields = next(csvreader)
   
-            #extracting each data row one by one
-            for row in csvreader:
-                rows.append(row)
+            # #extracting each data row one by one
+            # for row in csvreader:
+            #     rows.append(row)
+                
+            # #get total number of rows
+            # print("Total no. of rows: %d"%(csvreader.line_num))
   
-            #get total number of rows
-            print("Total no. of rows: %d"%(csvreader.line_num))
+            # # printing the field names
+            # print('Field names are: ' + ', '.join(field for field in fields))
   
-            #printing the field names
-            print('Field names are: ' + ', '.join(field for field in fields))
-  
-            #printing first 5 rows
+            # # printing first 5 rows
             # print('\nFirst 5 rows are:\n')
             # for row in rows[:5]:
             #     #parsing each column of a row
             #     for col in row:
             #         print("%10s"%col),
             #     print('\n')
-            # print('-------------------- CSV FILE END --------------------\n\n')
-            f.close()
+            
 
-"""
+            print('-------------------- CSV FILE END --------------------\n\n')
+            # csvappend.close()
+            f.close()
+            
+with open(new_csv_path, mode= 'w', encoding= 'utf-8', newline= '') as append_file:
+    csv.writer(append_file).writerows(append_all)
+
+
+
+
+
+# with open('studentScores.csv', 'r') as f:
+#     data = [line for line in csv.reader(f)]
+
+# newRecord = [Score, Name, Gender, FormGroup, Percentage]
+# data.append(newRecord)
+
+# data.sort(key=itemgetter(1))  # 1 being the column number
+
+# with open('studentScores.csv', 'w') as f:
+#     csv.writer(f).writerows(data)
