@@ -17,6 +17,20 @@ print("\n \n \n")
 
 print(directory)
 
+x = 0
+new_csv_path = os.path.join(cwd, "csv" + str(x))
+
+print(new_csv_path)
+
+while os.path.isfile(new_csv_path) == True:
+    x+=1
+    new_csv_path = os.path.join(cwd, 'csv' + str(x))
+    print(new_csv_path)
+    
+    
+newfile = open('csv' + str(x), mode = 'r+')
+newfile.close()
+
 for root,dirs,files in os.walk(directory):
     for file in files:
         if file.endswith('.csv'):

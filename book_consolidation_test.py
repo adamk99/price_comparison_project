@@ -1,6 +1,8 @@
 import csv
 import os
 from operator import itemgetter
+import pandas as pd
+
 """
 This first block gets current working directory into cwd. Then uses the cwd to join and make
 a new path using os.path.join for the "Sci-Fi Books" folder.  It then prints the current
@@ -123,3 +125,14 @@ with open(new_csv_path, mode= 'w', encoding= 'utf-8', newline= '') as append_fil
 
 # with open('studentScores.csv', 'w') as f:
 #     csv.writer(f).writerows(data)
+
+
+cwd = os.getcwd()  # Get the current working directory (cwd)
+files = os.listdir(cwd)  # Get all the files in that directory
+print(cwd)
+
+df = pd.read_csv("sf_military.csv")
+rf = pd.read_csv('sf_hard.csv')
+
+print(df.head())
+print(rf.tail())
